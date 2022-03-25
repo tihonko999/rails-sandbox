@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title RailsApp
+    = csrf_meta_tags
+    = csp_meta_tag
+    = javascript_pack_tag 'vue'
+  %body
+    = render "layouts/header"
+    = yield
